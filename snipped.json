@@ -274,4 +274,23 @@
 	],
 	"description": ""
 	},
+
+
+	"prime check": {
+	"prefix": "is_prime",
+	"body": [
+		"bool is_prime(int x) {",
+		"    if (x <= 1) {",
+		"        return false;",
+		"    }",
+		"    for (int i = 2; i * i <= x; i++) {",
+		"        if (x % i == 0) {",
+		"            return false;",
+		"        }",
+		"    }",
+		"    return true;",
+		"}"
+	],
+	"description": ""
+	},
 }
